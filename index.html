@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <title>
+        Password Generator
+    </title>
+    <meta name="description" content="Password Generator">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="no-margin">Generate a<br><span id="title">Random Password</span></h1>
+    <p id="motoo" class="no-margin">Never use an insecure password again.</p>
+    <div id="action-section">
+        <div id="button-container">
+            <button id="generate-password-btn"><img src="images/icon-btn.png" id="img-btn"><span id="text-btn">Generate
+                    passwords</span></button>
+        </div>
+        <div id="range-container"> <input type="range" min="8" max="16" id="range-input"
+                oninput="this.nextElementSibling.value = this.value">
+            <output id="output">12</output>
+        </div>
+    </div>
+    <!-- <hr> -->
+    <section>
+        <div class="passwords-container">
+            <div class="first-two-passwords">
+                <p class="password-element" id="first-password"><img src="images/sleeping-icon.png"
+                        class="margins-sleeping-icon"></p>
+                <p class="password-element" id="second-password"><img src="images/sleeping-icon.png"
+                        class="margins-sleeping-icon"></p>
+
+            </div>
+
+            <div class="second-two-passwords">
+                <p class="password-element" id="third-password"><img src="images/sleeping-icon.png"
+                        class="margins-sleeping-icon"></p>
+                <p class="password-element" id="fourth-password"><img src="images/sleeping-icon.png"
+                        class="margins-sleeping-icon"></p>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
